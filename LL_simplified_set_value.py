@@ -97,7 +97,11 @@ class LinkedList:
     
     def simplifiedSetValue(self,index,value):
         temp = self.getValue(index) # this will get the index node
-        temp.value = value 
+        if temp:
+            temp.value = value 
+            return True
+        else:
+            return False
 
 
 
