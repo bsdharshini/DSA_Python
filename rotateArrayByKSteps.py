@@ -1,6 +1,13 @@
+#Ques: Rotate array by k steps 
+
+# Solution: 
+# Use 2 pointer method to rotate the array
 # 1 Reverse the entire array
 # 2 Reverse the first k elements
 # 3 Reverse the remaining n-k elements
+
+# Time complexity : O(n), Space complexity : O(1)
+
 def reverseArray(left,right,arr):
     while(left<right):
         temp = arr[left]
